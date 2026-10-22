@@ -6,12 +6,14 @@
 <title>FlexZen — Meditations Change Your Lifestyle</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-
-<div class="hero-wrap">
 
   <section class="hero">
     <img
@@ -46,6 +48,15 @@
           </svg>
         </button>
       </div>
+      <!-- mobile controls: profile + menu toggle -->
+      <div class="mobile-controls">
+        <button class="profile-btn" aria-label="Profile">
+          <i class="fa fa-user-circle"></i>
+        </button>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
     </nav>
 
     <div class="hero-content">
@@ -68,10 +79,14 @@
         </div>
 
         <div class="popular-tags">
-          <span class="label">Popular Tags</span>
-          <span class="tag-pill"><span class="dot"></span>New Fitness</span>
-          <span class="tag-pill"><span class="dot"></span>Health Goal</span>
-          <span class="tag-pill"><span class="dot"></span>Fit Goal</span>
+          <div class="tags-header">
+            <span class="label">Popular Tags</span>
+          </div>
+          <div class="tag-pill-wrap">
+            <span class="tag-pill"><span class="dot"></span>New Fitness</span>
+            <span class="tag-pill"><span class="dot"></span>Health Goal</span>
+            <span class="tag-pill"><span class="dot"></span>Fit Goal</span>
+          </div>
         </div>
       </div>
 
@@ -109,7 +124,595 @@
     </div>
   </section>
 
-</div>
+<!-- ===== START YOUR JOURNEY TODAY ===== -->
+<section class="section-wrap journey-wrap">
+  <div class="section-head reveal">
+    <h2>Start Your Journey Today</h2>
+  </div>
+
+  <div class="journey-grid">
+    <article class="journey-card reveal">
+      <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80" alt="Woman meditating in a calm room, seated cross-legged">
+      <span class="card-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+      </span>
+      <div class="card-copy">
+        <h3>Improved Flexibility</h3>
+        <p>All the Lorem ipsum generators on the internet tend to repeat predefined chunks.</p>
+      </div>
+    </article>
+
+    <article class="journey-card reveal">
+      <img src="https://images.unsplash.com/photo-1573590330099-d6c7355ec595?auto=format&fit=crop&w=700&q=80" alt="Group practicing calming breathing exercises together indoors">
+      <span class="card-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+      </span>
+      <div class="card-copy">
+        <h3>Stress Reduction</h3>
+        <p>All the Lorem ipsum generators on the internet tend to repeat predefined chunks.</p>
+      </div>
+    </article>
+
+    <article class="journey-card reveal">
+      <img src="https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=700&q=80" alt="Woman holding a standing yoga pose in soft natural light">
+      <span class="card-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+      </span>
+      <div class="card-copy">
+        <h3>Mindful Breathing</h3>
+        <p>All the Lorem ipsum generators on the internet tend to repeat predefined chunks.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== YOUR LIFE FOR GREATER SELF OF YOGA ===== -->
+<section class="section-wrap">
+  <div class="life-yoga">
+    <div class="life-text reveal">
+      <h2>Your Life For Greater Self Of Yoga</h2>
+
+      <ul class="feature-list">
+        <li>
+          <span class="feature-icon tone-a">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Expert Instructors</h4>
+            <p>It's a way of life. Whether you're a beginner or an experienced yogi, our welcoming community is here for you.</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="feature-icon tone-b">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Transformative Power of Yoga</h4>
+            <p>It's a way of life. Whether you're a beginner or an experienced yogi, our welcoming community is here for you.</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="feature-icon tone-c">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Welcoming Community</h4>
+            <p>It's a way of life. Whether you're a beginner or an experienced yogi, our welcoming community is here for you.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="life-media reveal">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="https://images.pexels.com/videos/4098816/beautiful-birds-singing-calm-calming-4098816.jpeg?auto=compress&cs=tinysrgb&w=1200">
+        <source src="https://videos.pexels.com/video-files/4098816/4098816-hd_1920_1080_30fps.mp4" type="video/mp4">
+      </video>
+      <button class="story-card" id="storyBtn">
+        <span class="play-circle">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+        <span class="story-copy">
+          <strong>View Practice Stories</strong>
+          <span class="waveform">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+  <section class="sustain">
+    <img
+      class="sustain-img"
+      id="sustainImg"
+      src="https://images.pexels.com/photos/8964899/pexels-photo-8964899.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      alt="Woman meditating cross-legged on rocks by the sea">
+    <div class="sustain-scrim"></div>
+
+    <div class="sustain-text">
+      <span class="sustain-eyebrow">
+        <span class="sun-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </span>
+      </span>
+      <h2>
+        <span class="line"><span>Where Sustainability</span></span>
+        <span class="line"><span><em>Meets Meditation.</em></span></span>
+      </h2>
+
+      <button class="sustain-cta" id="sustainPlayBtn">
+        Start Being Today
+        <span class="play-circle">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+      </button>
+    </div>
+
+    <!-- Rating card replica -->
+    <div class="rating-card-2">
+      <div class="rating-top">
+        <div class="avatar-stack">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=80&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80" alt="">
+        </div>
+        <div class="trusted-label">
+          <span class="more">500k+</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>
+          Trusted
+        </div>
+      </div>
+      <p class="rating-quote">The perfect organizer and developer for dream agency</p>
+      <div class="rating-bottom">
+        <div class="rating-number-wrap">
+          <span class="breath-ring"></span>
+          <span class="rating-number">4.9</span>
+        </div>
+        <div class="rating-meta">
+          <div class="stars">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+          </div>
+          <span class="rating-caption">Rating</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Two mini feature cards -->
+    <div class="mini-card-group">
+      <div class="mini-card">
+        <span class="mini-card-img">
+          <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=120&q=80" alt="Person practicing yoga outdoors">
+        </span>
+        <div class="mini-card-text">
+          <em>Experience the future of meditation</em>
+          <p>Guided sessions built around how you actually live.</p>
+          <div class="stars">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-card">
+        <span class="mini-card-img">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=120&q=80" alt="Sustainable natural materials and greenery">
+        </span>
+        <div class="mini-card-text">
+          <em>Rooted in sustainable practice</em>
+          <p>Every retreat gives back more than it takes.</p>
+          <div class="stars">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9L19 7.6l-4.8 4.3L15.5 19 10 15.4 4.5 19l1.3-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION: Meet Our Instructors ====== -->
+  <section class="section-wrapper" id="instructorSection" aria-label="Meet Our Instructors">
+
+    <!-- ====== SECTION HEADER TEXTS (no brown) ====== -->
+    <div class="section-header">
+      <span class="subtitle"> Expert Guidance</span>
+      <h1>Meet Our <span>Instructors</span></h1>
+      <p class="description">
+        <i class="fas fa-quote-left" style="opacity: 0.5;"></i> 
+        Learn from world-class teachers who bring decades of experience, 
+        mindfulness, and authentic practice to every session. 
+        <i class="fas fa-quote-right" style="opacity: 0.5;"></i>
+      </p>
+      <p class="meta-info">
+        <i class="fas fa-map-pin"></i> 200+ classes monthly &nbsp;·&nbsp; 
+        <i class="fas fa-users"></i> 12K+ students worldwide
+      </p>
+    </div>
+
+    <!-- ====== INSTRUCTOR CARDS ====== -->
+    <div class="instructor-row">
+
+      <!-- Card 1 -->
+      <div class="product-card" data-name="Maya Torres">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop" alt="Maya Torres, yoga instructor" loading="lazy">
+        <div class="top-row"></div>
+        <div class="product-info">
+          <div class="text-content">
+            <span class="badge">✦ Vinyasa Flow</span>
+            <h2 class="product-name">Maya Torres</h2>
+            <p class="product-description">Breath-led flow · 8 years teaching</p>
+            <div class="price">
+              <i class="fas fa-star"></i>
+              4.9 <small>· 320 sessions</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="product-card" data-name="Daniel Osei">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=1000&auto=format&fit=crop" alt="Daniel Osei, yoga instructor" loading="lazy">
+        <div class="top-row"></div>
+        <div class="product-info">
+          <div class="text-content">
+            <span class="badge">✦ Power Yoga</span>
+            <h2 class="product-name">Daniel Osei</h2>
+            <p class="product-description">Strength-focused practice · 6 years teaching</p>
+            <div class="price">
+              <i class="fas fa-star"></i>
+              4.8 <small>· 214 sessions</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="product-card" data-name="Aiko Fujimori">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=1000&auto=format&fit=crop" alt="Aiko Fujimori, yoga instructor" loading="lazy">
+        <div class="top-row"></div>
+        <div class="product-info">
+          <div class="text-content">
+            <span class="badge">✦ Restorative</span>
+            <h2 class="product-name">Aiko Fujimori</h2>
+            <p class="product-description">Gentle, mindful sequencing · 10 years teaching</p>
+            <div class="price">
+              <i class="fas fa-star"></i>
+              5.0 <small>· 401 sessions</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="product-card" data-name="Leah Whitfield">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1000&auto=format&fit=crop" alt="Leah Whitfield, yoga instructor" loading="lazy">
+        <div class="top-row"></div>
+        <div class="product-info">
+          <div class="text-content">
+            <span class="badge">✦ Prenatal</span>
+            <h2 class="product-name">Leah Whitfield</h2>
+            <p class="product-description">Safe, supportive guidance · 5 years teaching</p>
+            <div class="price">
+              <i class="fas fa-star"></i>
+              4.9 <small>· 178 sessions</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="faq-section" aria-label="Frequently asked questions about yoga">
+
+        <!-- LEFT: Image -->
+        <div class="faq-image-col">
+            <img
+            src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1000&auto=format&fit=crop"
+            alt="Woman meditating in lotus pose, peaceful yoga practice"
+            loading="lazy"
+            >
+        </div>
+
+        <!-- RIGHT: FAQ content -->
+        <div class="faq-content">
+            <h2 class="faq-heading">
+                <i class="fas fa-circle-question"></i> Common Questions
+            </h2>
+
+            <div class="faq-items">
+                <!-- Item 1 -->
+                <div class="faq-item active">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="true">
+                        <span class="bullet"></span>
+                        <span class="q-text">What style of yoga is best for beginners?</span>
+                        <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <span class="highlight">Hatha Yoga</span> is often recommended for beginners.
+                            It focuses on basic postures, breath control, and gentle stretching,
+                            making it accessible and safe for those new to the practice.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span class="bullet"></span>
+                        <span class="q-text">How often should I practice yoga to see results?</span>
+                        <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            For noticeable results, aim for <span class="highlight">3–4 sessions per week</span>.
+                            Even 15–20 minutes of daily practice can improve flexibility, reduce stress,
+                            and build strength over time. Consistency matters more than duration.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span class="bullet"></span>
+                        <span class="q-text">What should I bring to my first yoga class?</span>
+                        <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Bring a <span class="highlight">yoga mat</span>, comfortable clothing that allows
+                            movement, a water bottle, and an open mind. Most studios provide mats and props
+                            if you don't have your own.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span class="bullet"></span>
+                        <span class="q-text">Can yoga help with stress and anxiety?</span>
+                        <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Yes! Yoga combines <span class="highlight">breathwork, movement, and mindfulness</span>,
+                            which activates the parasympathetic nervous system. Regular practice has been shown
+                            to lower cortisol levels and reduce symptoms of anxiety and depression.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 5 – feedback -->
+                <div class="faq-item feedback-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span class="bullet"></span>
+                        <span class="q-text">Please give your feedback on what we do at <a href="https://example.com" target="_blank" rel="noopener noreferrer">flexzen.com</a></span>
+                        <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We'd love to hear from you! Visit
+                            <a href="https://flexzen.com" target="_blank" rel="noopener noreferrer">flexzen.com</a>
+                            to share your thoughts, suggestions, or just say hello. Your feedback
+                            helps us grow and serve you better.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- =========================================================
+         CONTACT SECTION
+         ========================================================= -->
+    <section class="contact-component">
+        <div class="contact-container">
+            <h1 class="section-title">Let's get in touch.</h1>
+
+            <div class="content-wrapper">
+                <!-- Left Side: Contact Information -->
+                <aside class="info-card">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone icon"></i>
+                        <span>+234 (0) 8082 2999 61</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <span>email@email.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-brands fa-instagram icon"></i>
+                        <span>@instagramaccount</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-brands fa-facebook-f icon"></i>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-brands fa-linkedin-in icon"></i>
+                        <span>LinkedIn</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-brands fa-twitter icon"></i>
+                        <span>Twitter</span>
+                    </div>
+                </aside>
+
+                <!-- Right Side: Form -->
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="input-group full-width">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="John">
+                        </div>
+                    </div>
+
+                    <div class="form-row split">
+                        <div class="input-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="flexzenyoga@gmail.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="(123) 456-7890">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group full-width">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="How can we help you?"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                        <span class="required-note">Required fields</span>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Google Map Section (Focused on Uyo) -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63550.194930479025!2d7.9050011!3d5.0377605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043a6c4e2f3a5b7%3A0x8f7c1b6e5d4a3c2!2sUyo%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         FOOTER SECTION (FLEXZEN - GLASSMORPHISM)
+         ========================================================= -->
+    <footer class="flexzen-footer">
+        <div class="footer-container">
+            
+            <!-- Brand Title -->
+            <div class="footer-brand">Flexzen</div>
+
+            <!-- Main Footer Grid -->
+            <div class="footer-grid">
+                
+                <!-- Column 1: About Us -->
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p class="about-text">
+                        Flexzen is a leading yoga and wellness platform dedicated to helping individuals achieve balance, mindfulness, and holistic well-being. Our expert instructors and diverse programs cater to all levels, from beginners to seasoned practitioners.
+                    </p>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tumblr"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Services -->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Yoga teacher training (200hr, 300hr, 500hr)</a></li>
+                        <li><a href="#">Specialty certifications (prenatal, trauma-informed, etc.)</a></li>
+                        <li><a href="#">Wellness Programs</a></li>
+                        <li><a href="#">Yoga Retreats</a></li>
+                        <li><a href="#">Corporate Wellness</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Stay Connected & Location -->
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    
+                    <!-- Newsletter Form -->
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Enter Email Address" required>
+                        <button type="submit">Contact</button>
+                    </form>
+
+                    <!-- Office Location -->
+                    <div class="office-location">
+                        <h4>Office Location</h4>
+                        
+                        <div class="office-item">
+                            <i class="fa-regular fa-building"></i>
+                            <div class="office-details">
+                                <h5>Ikeja</h5>
+                                <p>Office 9B, Sky High Tower, New A Ring Road, Ikeja</p>
+                            </div>
+                        </div>
+
+                        <div class="office-item">
+                            <i class="fa-solid fa-monument"></i>
+                            <div class="office-details">
+                                <h5>Uyo</h5>
+                                <p>Office 150B, Behind Samsung Hub, Barracks Road, Uyo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom">
+                <p>&copy; All Rights Reserved 2024-2025</p>
+                <p>Designed by Tech Leslie</p>
+            </div>
+
+        </div>
+    </footer>
+
 
 <script src="index.js"></script>
 </body>
